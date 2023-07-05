@@ -27,7 +27,18 @@ Console.WriteLine ("Максимальное число из трех - это "
 /*Задача 6: Напишите программу, которая на вход принимает число и выдаёт, 
 является ли число чётным (делится ли оно на два без остатка).*/
 
-Console.WriteLine ("Введите число:");
+/*Console.WriteLine ("Введите число:");
 int number = Convert.ToInt32 (Console.ReadLine ());
 if (number % 2 == 0) Console.WriteLine ("Это четное число");
 else Console.WriteLine ("Это нечетное число");
+*/
+
+/*Задача 8: Напишите программу, которая на вход принимает число (N),
+а на выходе показывает все чётные числа от 1 до N.*/
+
+Console.WriteLine ("Введите число:");
+int number = Convert.ToInt32 (Console.ReadLine ());
+int chet = 2;
+while (chet <= number) {
+    Console.Write (chet + " ");
+    chet = chet + 2;}
