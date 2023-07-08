@@ -18,8 +18,9 @@ Console.WriteLine ("Вторая цифра числа: " + Dec);
 
  int Third (int number){
     if (number >=100){
-      int Thirds = number % 1000 / 100;
-    return Thirds;  
+        while (number >=1000) number = number / 10;
+        int Thirds = number % 10;
+        return Thirds;  
     }
     else return -1;
  }
@@ -27,5 +28,7 @@ Console.WriteLine ("Вторая цифра числа: " + Dec);
     int num = Convert.ToInt32 (Console.ReadLine ());
     int num3 = Third (num);
     if (num3>-1) Console.WriteLine ("Третья цифра числа: " + num3);
-    else Console.WriteLine ("У числа нет третьего разряда!");
+    else Console.WriteLine ("У числа нет третьей цифры!");
+
+
 
